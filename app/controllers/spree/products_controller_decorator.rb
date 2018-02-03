@@ -1,6 +1,6 @@
 module Spree
   ProductsController.class_eval do
-    skip_before_action :set_current_order, only: :recently_viewed
+
     after_action :save_recently_viewed, only: :recently_viewed
 
     def recently_viewed
